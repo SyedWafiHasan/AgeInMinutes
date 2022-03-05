@@ -43,7 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Date"
-        android:textColor="@color/black"
+        android:id="@+id/datePickerButton"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:layout_margin="8dp"
         android:backgroundTint="@color/buttonBackground"/>
 
