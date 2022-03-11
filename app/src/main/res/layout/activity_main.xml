@@ -52,7 +52,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/selectedDate"
+        android:id="@+id/selectedDateTextView"
         android:textColor="@color/textBlue"
         android:textSize="24sp"
         android:layout_margin="8dp" />
@@ -68,7 +68,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/minutes"
+        android:id="@+id/inMinutesTextView"
         android:textColor="@color/textBlue"
         android:textSize="24sp"
         android:layout_margin="8dp" />
