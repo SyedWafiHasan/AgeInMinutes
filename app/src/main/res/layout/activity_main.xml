@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="In Minutes"
+        android:text="In Minutes And Days"
         android:textColor="@color/textBlue"
         android:textStyle="bold"
         android:textSize="24sp"
@@ -77,6 +77,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="In Minutes, Till Date"
+        android:textColor="@color/textBlue"
+        android:textSize="16sp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inDaysTextView"
+        android:textColor="@color/textBlue"
+        android:textSize="24sp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Days, Till Date"
         android:textColor="@color/textBlue"
         android:textSize="16sp"
         android:layout_margin="8dp" />

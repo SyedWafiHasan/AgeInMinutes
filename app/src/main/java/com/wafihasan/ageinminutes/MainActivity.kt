@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity()
 
     private var selectedDateTextView : TextView? = null
     private var inMinutesTextView: TextView? = null
+    private var inDaysTextView: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity()
 
         selectedDateTextView = findViewById(R.id.selectedDateTextView)
         inMinutesTextView = findViewById(R.id.inMinutesTextView)
+        inDaysTextView = findViewById(R.id.inDaysTextView)
 
         datePickerButton.setOnClickListener{
             clickDatePicker()
@@ -59,10 +61,17 @@ class MainActivity : AppCompatActivity()
             val dateInMinutes = date.time / 60000; // returns time since Jan 1 1970 in milliseconds. Divide by 1000 to get seconds
             //Then by 60 to get minutes. Hence, 60000
 
+            val dateInDays = date.time / 1000 / 60 / 60 / 24
+
             val currentTime = simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis())).time / 60000
             val differenceInMinutes = currentTime - dateInMinutes
 
+            val dateToday = simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis())).time / 86400000
+            val diff = dateToday - dateInDays
+
             inMinutesTextView?.text = differenceInMinutes.toString();
+            inDaysTextView?.text = diff.toString()
+
         },
             year, month, day)
 
