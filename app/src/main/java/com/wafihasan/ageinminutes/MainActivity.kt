@@ -46,10 +46,10 @@ class MainActivity : AppCompatActivity()
         {
             _, year, month, day ->
 
-            Toast.makeText(this, "DatePicker pressed", Toast.LENGTH_LONG).show()
-            Toast.makeText(this, "Year was $year", Toast.LENGTH_LONG).show()
-            Toast.makeText(this, "Month was ${month+1}", Toast.LENGTH_LONG).show()
-            Toast.makeText(this, "Day was $day", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "DatePicker pressed", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "Year was $year", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "Month was ${month+1}", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "Day was $day", Toast.LENGTH_LONG).show()
 
             val selectedDate = "$day/${month + 1}/$year"
 
@@ -78,6 +78,6 @@ class MainActivity : AppCompatActivity()
         datePickerDialog.datePicker.maxDate = System.currentTimeMillis()
         datePickerDialog.show();
 
-        Toast.makeText(this, "Button Pressed", Toast.LENGTH_LONG).show()
+//        Toast.makeText(this, "Button Pressed", Toast.LENGTH_LONG).show()
     }
 }
